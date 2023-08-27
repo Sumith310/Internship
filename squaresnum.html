@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table,h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>program to find square and cube</h1>
+    <script type="text/javascript">
+        var mytable="<table border='1' align='center' <tr> <th>Number</th><th>Square</th><th>Cube</th></tr>";
+        var square=0;cube=0;
+
+        for(var i=0;i<=10;i++)
+        {
+            square=i*i;
+            cube=i*i*i;
+            mytable+="<tr><td>"+i+"</td><td>"+square+"</td><td>"+cube+"</td></tr>"
+        }
+        mytable+="</table";
+        document.write(mytable)
+    </script>
+</body>
+</html>
